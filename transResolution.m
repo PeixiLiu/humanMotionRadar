@@ -1,3 +1,5 @@
+% Convert the original spectrograms to a smaller size 42*42 for CNN training
+
 for ii = 1:1:3
     power_subfolder = sprintf('radar_%d', ii);
     power_rootfolder = '.\data\THREE_RADAR\';
