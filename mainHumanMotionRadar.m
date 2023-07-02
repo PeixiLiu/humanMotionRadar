@@ -63,7 +63,7 @@ for m = 1:npulse
     % person
     xt_ped = chan_ped(repmat(x,1,size(pos_ped,2)),pos_tx,pos_ped,vel_tx,vel_ped); % channel to the person
     xt_ped = reflect(ped,xt_ped,angrt_ped); % reflection from the person
-    % xr_ped(:,m) = rx(xt_ped + clutter(1:round(fs*tm))); % One can add clutter here. For example, clutter in a conference room can be modeled according to 802.11ay, which can be simulated by the toolbox of Matlab. 
+    % xr_ped(:,m) = rx(xt_ped + clutter(1:round(fs*tm))); % One can add clutter here. For example, clutter in a conference room can be modeled according to 802.11ay, which can be simulated by the WLAN toolbox of Matlab. 
     xr_ped_perfect(:,m) = rx(xt_ped); % perfect case without the environment
 end
 
